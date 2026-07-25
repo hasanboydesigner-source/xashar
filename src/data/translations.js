@@ -50,6 +50,8 @@ export const translations = {
     workerStep3: "Buyurtmalarni olasiz",
 
     whyTitle: "Nega aynan HASHARCHI?",
+    whyEyebrow: "Nima uchun Hasharchi",
+    whySubtext: "O'zbekistondagi eng tez o'suvchi ishchi platformasi — foydalanuvchilar bu afzalliklarni ko'rsatib beradi.",
     why1: "Ishchilarni tez topish",
     why2: "Mahalliy ijrochilar",
     why3: "Qulay mobil ilova",
@@ -137,6 +139,8 @@ export const translations = {
     workerStep3: "Получайте заказы",
 
     whyTitle: "Почему именно HASHARCHI?",
+    whyEyebrow: "Почему Hasharchi",
+    whySubtext: "Самая быстрорастущая платформа для рабочих в Узбекистане — пользователи подтверждают эти преимущества.",
     why1: "Быстрый поиск рабочих",
     why2: "Местные исполнители",
     why3: "Удобное мобильное приложение",
@@ -224,6 +228,8 @@ export const translations = {
     workerStep3: "Буюртмаларни оласиз",
 
     whyTitle: "Нега айнан HASHARCHI?",
+    whyEyebrow: "Нима учун Hasharchi",
+    whySubtext: "Ўзбекистондаги энг тез ўсувчи ишчи платформаси — фойдаланувчилар бу афзалликларни кўрсатиб беради.",
     why1: "Ишчиларни тез топиш",
     why2: "Маҳаллий ижрочилар",
     why3: "Қулай мобил илова",

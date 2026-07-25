@@ -16,7 +16,7 @@ export default function WhyHasharchi({ t }) {
 
         <div className="section-eyebrow">
           <span className="eyebrow-dot" />
-          Nima uchun Hasharchi
+          {t.whyEyebrow}
         </div>
 
         <div className="why-layout">
@@ -24,7 +24,7 @@ export default function WhyHasharchi({ t }) {
           <div className="why-left">
             <h2 className="why-heading">{t.whyTitle}</h2>
             <p className="why-subtext">
-              O'zbekistondagi eng tez o'suvchi ishchi platformasi — foydalanuvchilar bu afzalliklarni ko'rsatib beradi.
+              {t.whySubtext}
             </p>
           </div>
 
