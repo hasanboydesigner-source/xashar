@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { translations } from './data/translations';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -19,6 +19,23 @@ export default function App() {
   const [termsOpen, setTermsOpen] = useState(false);
 
   const t = translations[lang] || translations.UZ;
+
+  useEffect(() => {
+    let htmlLang = 'uz';
+    if (lang === 'RU') htmlLang = 'ru';
+    if (lang === 'ЎЗ') htmlLang = 'uz-Cyrl';
+    document.documentElement.lang = htmlLang;
+    
+    // Fallback title translation logic if needed, or just let it be generic
+    // Since SEO bots usually see initial HTML, dynamic title is a bonus for a11y.
+    if (lang === 'RU') {
+      document.title = 'HASHARCHI — Платформа для быстрого поиска мастеров и рабочих';
+    } else if (lang === 'ЎЗ') {
+      document.title = 'HASHARCHI — Уста ва кунлик ишчиларни тез топиш платформаси';
+    } else {
+      document.title = 'HASHARCHI — Usta va kunlik ishchilarni tez topish platformasi';
+    }
+  }, [lang]);
 
   const handleLangChange = (newLang) => {
     if (newLang === lang) return;
