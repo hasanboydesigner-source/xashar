@@ -2,13 +2,12 @@ import React from 'react';
 import { Smartphone, Star, Shield, Zap } from 'lucide-react';
 import qrCodeImg from '../qrcode.gif';
 
-const features = [
-  { icon: <Zap size={16} />, text: 'Daqiqalar ichida usta toping' },
-  { icon: <Shield size={16} />, text: 'Tekshirilgan mutaxassislar' },
-  { icon: <Star size={16} />, text: 'Reytinglar va sharhlar' },
-];
-
 export default function DownloadCTA({ t }) {
+  const features = [
+    { icon: <Zap size={16} />, text: t.ctaFeat1 },
+    { icon: <Shield size={16} />, text: t.ctaFeat2 },
+    { icon: <Star size={16} />, text: t.ctaFeat3 },
+  ];
   return (
     <section className="cta-section-pro">
       {/* subtle grid overlay */}
@@ -21,12 +20,12 @@ export default function DownloadCTA({ t }) {
           <div className="cta-left">
             <div className="cta-eyebrow">
               <Smartphone size={15} />
-              <span>Bepul yuklab oling</span>
+              <span>{t.ctaFreeDownload}</span>
             </div>
 
             <h2 className="cta-left-heading">
-              Hasharchi — <br />
-              Har doim yoningizda
+              {t.ctaHeading1} <br />
+              {t.ctaHeading2}
             </h2>
 
             <p className="cta-left-body">
@@ -73,10 +72,10 @@ export default function DownloadCTA({ t }) {
           {/* ─── RIGHT COLUMN  ─── */}
           <div className="cta-right">
             <div className="cta-qr-card">
-              <p className="cta-qr-label">Kamerangiz bilan skanerlang</p>
+              <p className="cta-qr-label">{t.ctaQrLabel}</p>
                 <img src={qrCodeImg} alt="Hasharchi App QR Code" className="cta-qr-img" />
               <p className="cta-qr-hint">
-                iOS va Android uchun mavjud
+                {t.ctaQrHint}
               </p>
             </div>
           </div>

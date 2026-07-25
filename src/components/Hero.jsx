@@ -3,66 +3,65 @@ import { Users, Flame, Zap, Droplet, Truck, Sparkles, Wrench } from 'lucide-reac
 import heroImg from '../ChatGPT Image Jul 25, 2026, 11_16_46 AM-Photoroom.png';
 import qrCodeImg from '../qrcode.gif';
 
-// Left chips: slide-in from left, then continuous individual float loop
-const leftChips = [
-  {
-    cls: 'chip-red',
-    icon: <Flame size={13} />,
-    label: 'Santexnik',
-    // entrance delay | entrance dur | float delay (after entrance) | float dur | float Y
-    entDelay: '0s',    entDur: '.5s',
-    floatDelay: '.55s', floatDur: '2.8s', floatY: '-7px',
-  },
-  {
-    cls: 'chip-yellow',
-    icon: <Zap size={13} />,
-    label: 'Elektrik',
-    entDelay: '.14s',  entDur: '.5s',
-    floatDelay: '.7s',  floatDur: '3.4s', floatY: '-6px',
-  },
-  {
-    cls: 'chip-blue',
-    icon: <Droplet size={13} />,
-    label: 'Qurilish',
-    entDelay: '.28s',  entDur: '.5s',
-    floatDelay: '.85s', floatDur: '2.5s', floatY: '-8px',
-  },
-];
-
-// Right chips: slide-in from right, then continuous individual float loop
-const rightChips = [
-  {
-    cls: 'chip-orange',
-    icon: <Wrench size={13} />,
-    label: 'Duradgor',
-    entDelay: '.08s',  entDur: '.5s',
-    floatDelay: '.62s', floatDur: '3.1s', floatY: '-6px',
-  },
-  {
-    cls: 'chip-cyan',
-    icon: <Truck size={13} />,
-    label: 'Yukchi',
-    entDelay: '.22s',  entDur: '.5s',
-    floatDelay: '.76s', floatDur: '2.6s', floatY: '-8px',
-  },
-  {
-    cls: 'chip-green',
-    icon: <Sparkles size={13} />,
-    label: 'Tozalik',
-    entDelay: '.36s',  entDur: '.5s',
-    floatDelay: '.94s', floatDur: '3.6s', floatY: '-5px',
-  },
-];
-
-const statPills = [
-  { cls: 'pillar-3', val: '50K+', delay: '0s',   dur: '3.2s' },
-  { cls: 'pillar-4', val: '345',  delay: '0.8s',  dur: '2.7s' },
-  { cls: 'pillar-5', val: '146',  delay: '1.4s',  dur: '3.6s' },
-  { cls: 'pillar-6', val: '50',   delay: '0.4s',  dur: '2.9s' },
-];
-
 export default function Hero({ t, onOpenDownload }) {
   const [imgLoaded, setImgLoaded] = useState(false);
+
+  // Left chips: slide-in from left, then continuous individual float loop
+  const leftChips = [
+    {
+      cls: 'chip-red',
+      icon: <Flame size={13} />,
+      label: t.chipPlumber,
+      entDelay: '0s',    entDur: '.5s',
+      floatDelay: '.55s', floatDur: '2.8s', floatY: '-7px',
+    },
+    {
+      cls: 'chip-yellow',
+      icon: <Zap size={13} />,
+      label: t.chipElectrician,
+      entDelay: '.14s',  entDur: '.5s',
+      floatDelay: '.7s',  floatDur: '3.4s', floatY: '-6px',
+    },
+    {
+      cls: 'chip-blue',
+      icon: <Droplet size={13} />,
+      label: t.chipConstruction,
+      entDelay: '.28s',  entDur: '.5s',
+      floatDelay: '.85s', floatDur: '2.5s', floatY: '-8px',
+    },
+  ];
+
+  // Right chips: slide-in from right, then continuous individual float loop
+  const rightChips = [
+    {
+      cls: 'chip-orange',
+      icon: <Wrench size={13} />,
+      label: t.chipCarpenter,
+      entDelay: '.08s',  entDur: '.5s',
+      floatDelay: '.62s', floatDur: '3.1s', floatY: '-6px',
+    },
+    {
+      cls: 'chip-cyan',
+      icon: <Truck size={13} />,
+      label: t.chipLoader,
+      entDelay: '.22s',  entDur: '.5s',
+      floatDelay: '.76s', floatDur: '2.6s', floatY: '-8px',
+    },
+    {
+      cls: 'chip-green',
+      icon: <Sparkles size={13} />,
+      label: t.chipCleaner,
+      entDelay: '.36s',  entDur: '.5s',
+      floatDelay: '.94s', floatDur: '3.6s', floatY: '-5px',
+    },
+  ];
+
+  const statPills = [
+    { cls: 'pillar-3', val: '50K+', delay: '0s',   dur: '3.2s' },
+    { cls: 'pillar-4', val: '345',  delay: '0.8s',  dur: '2.7s' },
+    { cls: 'pillar-5', val: '146',  delay: '1.4s',  dur: '3.6s' },
+    { cls: 'pillar-6', val: '50',   delay: '0.4s',  dur: '2.9s' },
+  ];
 
   return (
     <section className="domo-hero-exact">
@@ -84,11 +83,11 @@ export default function Hero({ t, onOpenDownload }) {
         <div className="hero-top-block">
           <div className="notice-chip">
             <span className="notice-chip-dot" />
-            <span>O'zbekistondagi №1 Kunlik ishchilar platformasi</span>
+            <span>{t.heroTopNotice}</span>
           </div>
           <h1 className="hero-headline">
-            Usta va ishchi<br />
-            <span className="hero-headline-accent">1 daqiqada</span> yoningizda
+            {t.heroTitleMain1}<br />
+            <span className="hero-headline-accent">{t.heroTitleHighlight}</span> {t.heroTitleMain2}
           </h1>
         </div>
 
@@ -154,15 +153,15 @@ export default function Hero({ t, onOpenDownload }) {
             <div className="stat-icon-circle">
               <Users size={22} color="#ffffff" />
             </div>
-            <div className="stat-label">Ro'yxatdan o'tganlar</div>
+            <div className="stat-label">{t.statRegistered}</div>
             <div className="stat-number">50K+</div>
           </div>
 
           <div className="domo-qr-card" onClick={onOpenDownload}>
             <div className="qr-left-content">
-              <h3 className="qr-title">Mobil ilovamizni yuklab oling</h3>
+              <h3 className="qr-title">{t.qrTitle}</h3>
               <p className="qr-subtitle">
-                Ushbu funksiyadan va ko'proq imkoniyatlardan foydalaning!
+                {t.qrSubtitle}
               </p>
               <div className="qr-store-badges-row">
                 <span className="store-pill">App Store</span>
