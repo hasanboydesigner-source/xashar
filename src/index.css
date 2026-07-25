@@ -921,6 +921,7 @@ button {
 .muhim-strip-inner {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -945,6 +946,7 @@ button {
   font-weight: 500;
   color: #78350f;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* ==========================================================================
