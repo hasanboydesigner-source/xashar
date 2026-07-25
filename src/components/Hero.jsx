@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Users, Flame, Zap, Droplet, Truck, Sparkles, Wrench } from 'lucide-react';
 import heroImg from '../ChatGPT Image Jul 25, 2026, 11_16_46 AM-Photoroom.png';
+import qrCodeImg from '../qrcode.gif';
 
 // Left chips: slide-in from left, then continuous individual float loop
 const leftChips = [
@@ -169,34 +170,7 @@ export default function Hero({ t, onOpenDownload }) {
               </div>
             </div>
             <div className="qr-code-box">
-              <svg viewBox="0 0 200 200" width="76" height="76">
-                <rect width="200" height="200" fill="#ffffff" rx="8"/>
-                <rect x="15" y="15" width="50" height="50" fill="#1251cc" rx="4"/>
-                <rect x="25" y="25" width="30" height="30" fill="#ffffff" rx="2"/>
-                <rect x="33" y="33" width="14" height="14" fill="#ff6b00" rx="1"/>
-                <rect x="135" y="15" width="50" height="50" fill="#1251cc" rx="4"/>
-                <rect x="145" y="25" width="30" height="30" fill="#ffffff" rx="2"/>
-                <rect x="153" y="33" width="14" height="14" fill="#ff6b00" rx="1"/>
-                <rect x="15" y="135" width="50" height="50" fill="#1251cc" rx="4"/>
-                <rect x="25" y="145" width="30" height="30" fill="#ffffff" rx="2"/>
-                <rect x="33" y="153" width="14" height="14" fill="#ff6b00" rx="1"/>
-                <rect x="80" y="20" width="12" height="12" fill="#1251cc"/>
-                <rect x="100" y="35" width="14" height="12" fill="#ff6b00"/>
-                <rect x="75" y="55" width="18" height="12" fill="#1251cc"/>
-                <rect x="20" y="80" width="12" height="14" fill="#1251cc"/>
-                <rect x="45" y="90" width="15" height="15" fill="#ff6b00"/>
-                <rect x="75" y="85" width="25" height="12" fill="#1251cc"/>
-                <rect x="110" y="75" width="14" height="20" fill="#1251cc"/>
-                <rect x="140" y="80" width="20" height="12" fill="#ff6b00"/>
-                <rect x="170" y="95" width="15" height="15" fill="#1251cc"/>
-                <rect x="80" y="115" width="20" height="15" fill="#1251cc"/>
-                <rect x="110" y="120" width="15" height="25" fill="#ff6b00"/>
-                <rect x="145" y="110" width="25" height="12" fill="#1251cc"/>
-                <rect x="80" y="145" width="15" height="35" fill="#ff6b00"/>
-                <rect x="105" y="155" width="30" height="14" fill="#1251cc"/>
-                <rect x="145" y="145" width="20" height="25" fill="#1251cc"/>
-                <rect x="170" y="170" width="15" height="15" fill="#ff6b00"/>
-              </svg>
+              <img src={qrCodeImg} alt="Hasharchi QR Code" className="domo-qr-img" />
             </div>
           </div>
         </div>

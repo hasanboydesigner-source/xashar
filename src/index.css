@@ -655,6 +655,14 @@ button {
   flex-shrink: 0;
 }
 
+.domo-qr-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
 /* ==========================================================================
    DOWNLOAD CTA — SENIOR TWO-COLUMN SPLIT LAYOUT
    ========================================================================== */
