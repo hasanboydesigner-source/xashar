@@ -6,10 +6,8 @@ export default function Footer({ t, onOpenTerms, onOpenPrivacy }) {
     <footer className="ftr">
       <div className="container">
 
-        {/* ── Top row: brand + nav + socials ── */}
         <div className="ftr-top">
 
-          {/* Brand */}
           <div className="ftr-brand">
             <div className="ftr-monogram" aria-hidden="true">
               <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
@@ -22,7 +20,6 @@ export default function Footer({ t, onOpenTerms, onOpenPrivacy }) {
             <span className="ftr-wordmark">HASHARCHI</span>
           </div>
 
-          {/* Nav links */}
           <nav className="ftr-nav">
             <a href="#about"        className="ftr-link">{t.navAbout}</a>
             <a href="#how-it-works" className="ftr-link">{t.navHowItWorks}</a>
@@ -30,7 +27,6 @@ export default function Footer({ t, onOpenTerms, onOpenPrivacy }) {
             <a href="#contact"      className="ftr-link">{t.navContact}</a>
           </nav>
 
-          {/* Socials */}
           <div className="ftr-socials">
             <a href="https://t.me/hasharchiuz"               target="_blank" rel="noopener noreferrer" className="ftr-social-btn" aria-label="Telegram"><Send size={16}/></a>
             <a href="https://t.me/hasharchiadmin"            target="_blank" rel="noopener noreferrer" className="ftr-social-btn" aria-label="Support"><Headphones size={16}/></a>
@@ -39,10 +35,8 @@ export default function Footer({ t, onOpenTerms, onOpenPrivacy }) {
           </div>
         </div>
 
-        {/* ── Divider ── */}
         <div className="ftr-divider" />
 
-        {/* ── Bottom row: copyright + legal ── */}
         <div className="ftr-bottom">
           <span className="ftr-copy">{t.footerRights}</span>
           <div className="ftr-legal">

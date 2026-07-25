@@ -30,20 +30,18 @@ export default function WhatIsHasharchi({ t }) {
     <section className="section-light" id="about">
       <div className="container">
 
-        {/* Section label */}
         <div className="section-eyebrow">
           <span className="eyebrow-dot" />
           Platforma haqida
         </div>
 
         <div className="what-layout">
-          {/* Left: heading + description */}
+          
           <div className="what-left">
             <h2 className="what-heading">{t.whatTitle}</h2>
             <p className="what-body">{t.whatDesc}</p>
           </div>
 
-          {/* Right: 3 feature cards */}
           <div className="what-cards">
             {cards.map((c, i) => (
               <div className="what-card" key={i}>

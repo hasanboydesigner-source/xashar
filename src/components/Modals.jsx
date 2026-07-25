@@ -13,7 +13,7 @@ export default function Modals({
 }) {
   return (
     <>
-      {/* Download QR Center Modal */}
+      
       {downloadOpen && (
         <div className="modal-backdrop" onClick={() => setDownloadOpen(false)}>
           <div className="modal-card modal-center-glass" onClick={(e) => e.stopPropagation()}>
@@ -59,7 +59,6 @@ export default function Modals({
         </div>
       )}
 
-      {/* Privacy Policy Modal */}
       {privacyOpen && (
         <div className="modal-backdrop" onClick={() => setPrivacyOpen(false)}>
           <div className="modal-card modal-large-glass" onClick={(e) => e.stopPropagation()}>
@@ -78,7 +77,6 @@ export default function Modals({
         </div>
       )}
 
-      {/* Terms of Service Modal */}
       {termsOpen && (
         <div className="modal-backdrop" onClick={() => setTermsOpen(false)}>
           <div className="modal-card modal-large-glass" onClick={(e) => e.stopPropagation()}>

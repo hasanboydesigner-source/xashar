@@ -20,7 +20,7 @@ export default function WhyHasharchi({ t }) {
         </div>
 
         <div className="why-layout">
-          {/* Left: heading */}
+          
           <div className="why-left">
             <h2 className="why-heading">{t.whyTitle}</h2>
             <p className="why-subtext">
@@ -28,7 +28,6 @@ export default function WhyHasharchi({ t }) {
             </p>
           </div>
 
-          {/* Right: 5 items as rows */}
           <div className="why-list">
             {whyItems.map((item, i) => (
               <div className="why-row" key={i}>

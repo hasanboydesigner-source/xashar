@@ -48,13 +48,11 @@ export default function AboutContact({ t }) {
 
         <div className="about-layout">
 
-          {/* Left: About */}
           <div className="about-left">
             <h2 className="about-heading">{t.aboutTitle}</h2>
             <p className="about-body">{t.aboutText}</p>
           </div>
 
-          {/* Right: Contact cards */}
           <div className="about-right">
             <div className="contact-heading">{t.contactTitle}</div>
             <div className="social-grid">

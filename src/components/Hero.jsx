@@ -6,7 +6,6 @@ import qrCodeImg from '../qrcode.gif';
 export default function Hero({ t, onOpenDownload }) {
   const [imgLoaded, setImgLoaded] = useState(false);
 
-  // Left chips: slide-in from left, then continuous individual float loop
   const leftChips = [
     {
       cls: 'chip-red',
@@ -31,7 +30,6 @@ export default function Hero({ t, onOpenDownload }) {
     },
   ];
 
-  // Right chips: slide-in from right, then continuous individual float loop
   const rightChips = [
     {
       cls: 'chip-orange',
@@ -66,7 +64,6 @@ export default function Hero({ t, onOpenDownload }) {
   return (
     <section className="domo-hero-exact">
 
-      {/* Animated stat pills */}
       {statPills.map((p, i) => (
         <div
           key={i}
@@ -79,7 +76,6 @@ export default function Hero({ t, onOpenDownload }) {
 
       <div className="container domo-hero-container">
 
-        {/* ── TOP ── */}
         <div className="hero-top-block">
           <div className="notice-chip">
             <span className="notice-chip-dot" />
@@ -91,10 +87,8 @@ export default function Hero({ t, onOpenDownload }) {
           </h1>
         </div>
 
-        {/* ── CENTER ── */}
         <div className="hero-phones-row">
 
-          {/* Left chips */}
           <div className="hero-side-chips left-chips">
             {leftChips.map((c, i) => (
               <span
@@ -114,7 +108,6 @@ export default function Hero({ t, onOpenDownload }) {
             ))}
           </div>
 
-          {/* Phone image with skeleton loader */}
           <div className="hero-phones-frame">
             {!imgLoaded && <div className="img-skeleton" />}
             <img
@@ -126,7 +119,6 @@ export default function Hero({ t, onOpenDownload }) {
             />
           </div>
 
-          {/* Right chips */}
           <div className="hero-side-chips right-chips">
             {rightChips.map((c, i) => (
               <span
@@ -147,7 +139,6 @@ export default function Hero({ t, onOpenDownload }) {
           </div>
         </div>
 
-        {/* ── BOTTOM ── */}
         <div className="domo-bottom-row">
           <div className="domo-stat-card">
             <div className="stat-icon-circle">

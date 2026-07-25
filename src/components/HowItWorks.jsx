@@ -29,7 +29,6 @@ export default function HowItWorks({ t }) {
 
         <h2 className="how-heading">{t.howTitle}</h2>
 
-        {/* Tab switcher */}
         <div className="how-tabs">
           <button
             className={`how-tab-btn${active === 'clients' ? ' how-tab-active' : ''}`}
@@ -47,11 +46,10 @@ export default function HowItWorks({ t }) {
           </button>
         </div>
 
-        {/* Steps row */}
         <div className="how-steps-row">
           {steps.map((step, i) => (
             <React.Fragment key={i}>
-              {/* Step card */}
+              
               <div className="how-step-card">
                 <span className="how-step-num" style={{ color: accentColor }}>
                   {step.n}
@@ -60,7 +58,6 @@ export default function HowItWorks({ t }) {
                 <p className="how-step-text">{step.text}</p>
               </div>
 
-              {/* Connector arrow between steps */}
               {i < steps.length - 1 && (
                 <div className="how-step-connector">
                   <ArrowRight size={20} style={{ color: accentColor, opacity: 0.6 }} />

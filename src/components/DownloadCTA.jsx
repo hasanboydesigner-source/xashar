@@ -10,13 +10,12 @@ export default function DownloadCTA({ t }) {
   ];
   return (
     <section className="cta-section-pro">
-      {/* subtle grid overlay */}
+      
       <div className="cta-grid-overlay" aria-hidden="true" />
 
       <div className="container">
         <div className="cta-inner-layout">
 
-          {/* ─── LEFT COLUMN ─── */}
           <div className="cta-left">
             <div className="cta-eyebrow">
               <Smartphone size={15} />
@@ -69,7 +68,6 @@ export default function DownloadCTA({ t }) {
             </div>
           </div>
 
-          {/* ─── RIGHT COLUMN  ─── */}
           <div className="cta-right">
             <div className="cta-qr-card">
               <p className="cta-qr-label">{t.ctaQrLabel}</p>

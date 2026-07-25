@@ -25,9 +25,7 @@ export default function App() {
     if (lang === 'RU') htmlLang = 'ru';
     if (lang === 'ЎЗ') htmlLang = 'uz-Cyrl';
     document.documentElement.lang = htmlLang;
-    
-    // Fallback title translation logic if needed, or just let it be generic
-    // Since SEO bots usually see initial HTML, dynamic title is a bonus for a11y.
+
     if (lang === 'RU') {
       document.title = 'HASHARCHI — Платформа для быстрого поиска мастеров и рабочих';
     } else if (lang === 'ЎЗ') {

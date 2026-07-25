@@ -31,14 +31,13 @@ export default function Header({ lang, setLang, t, onOpenDownload }) {
     <header className={`hdr${scrolled ? ' hdr--scrolled' : ''}`}>
       <div className="container hdr-inner">
 
-        {/* ── Brand wordmark (no image) ── */}
         <a href="#" className="hdr-brand">
-          {/* Geometric monogram */}
+          
           <span className="hdr-monogram" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               <rect width="32" height="32" rx="9" fill="#ffffff" fillOpacity=".15"/>
               <rect x="1" y="1" width="30" height="30" rx="8" stroke="white" strokeOpacity=".25" strokeWidth="1"/>
-              {/* Stylised H shape */}
+              
               <rect x="7"  y="8"  width="4" height="16" rx="2" fill="white"/>
               <rect x="21" y="8"  width="4" height="16" rx="2" fill="white"/>
               <rect x="7"  y="14" width="18" height="4"  rx="2" fill="white" fillOpacity=".75"/>
@@ -47,7 +46,6 @@ export default function Header({ lang, setLang, t, onOpenDownload }) {
           <span className="hdr-wordmark">HASHARCHI</span>
         </a>
 
-        {/* ── Centre nav ── */}
         <nav className="hdr-nav" aria-label="Asosiy menyu">
           <a href="#about"        className="hdr-link">{t.navAbout}</a>
           <a href="#how-it-works" className="hdr-link">{t.navHowItWorks}</a>
@@ -55,10 +53,8 @@ export default function Header({ lang, setLang, t, onOpenDownload }) {
           <a href="#contact"      className="hdr-link">{t.navContact}</a>
         </nav>
 
-        {/* ── Right controls ── */}
         <div className="hdr-controls">
 
-          {/* Language picker */}
           <div className="hdr-lang" ref={dropRef}>
             <button
               className="hdr-lang-btn"
@@ -91,7 +87,6 @@ export default function Header({ lang, setLang, t, onOpenDownload }) {
             )}
           </div>
 
-          {/* Download CTA */}
           <button className="hdr-cta" onClick={onOpenDownload}>
             <Download size={14} strokeWidth={2.5} />
             <span>{t.downloadAppShort}</span>
