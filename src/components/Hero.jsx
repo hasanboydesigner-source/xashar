@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Users, Flame, Zap, Droplet, Truck, Sparkles, Wrench } from 'lucide-react';
 import heroImg from '../ChatGPT Image Jul 25, 2026, 11_16_46 AM-Photoroom.png';
 
@@ -61,6 +61,8 @@ const statPills = [
 ];
 
 export default function Hero({ t, onOpenDownload }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <section className="domo-hero-exact">
 
@@ -112,12 +114,15 @@ export default function Hero({ t, onOpenDownload }) {
             ))}
           </div>
 
-          {/* Phone image */}
+          {/* Phone image with skeleton loader */}
           <div className="hero-phones-frame">
+            {!imgLoaded && <div className="img-skeleton" />}
             <img
               src={heroImg}
               alt="HASHARCHI Mobil Ilova"
-              className="hero-phones-img phones-levitate"
+              className={`hero-phones-img phones-levitate ${imgLoaded ? 'img-loaded' : ''}`}
+              onLoad={() => setImgLoaded(true)}
+              fetchpriority="high"
             />
           </div>
 
