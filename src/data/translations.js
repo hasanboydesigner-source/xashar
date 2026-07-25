@@ -72,7 +72,7 @@ export const translations = {
     ctaQrHint: "iOS va Android uchun mavjud",
 
     aboutTitle: "Biz haqimizda",
-    aboutText: "HASHARCHI — ishchilar va buyurtmalarni qulay, xavfsiz va tez topish uchun yaratilgan zamonaviy mobil platforma. Maqsadimiz – kunlik ish bozorini shaffof va barcha uchun ochiq qilishdir.",
+    aboutText: "HASHARCHI — usta, ishchi, mardikor, santexnik, elektrik va yukchi kabi mutaxassislarni hamda kunlik ishlarni qulay, xavfsiz va tez topish uchun yaratilgan zamonaviy mobil platforma. Maqsadimiz – O'zbekiston bo'ylab kunlik ish bozorini shaffof va barcha uchun ochiq qilishdir.",
     contactTitle: "Biz bilan bog'lanish",
 
     socialTelegram: "Telegram kanal",
@@ -161,7 +161,7 @@ export const translations = {
     ctaQrHint: "Доступно для iOS и Android",
 
     aboutTitle: "О нас",
-    aboutText: "HASHARCHI — современная мобильная платформа, созданная для удобного, безопасного и быстрого поиска рабочих и заказов. Наша цель – сделать рынок дневной работы прозрачным и доступным для всех.",
+    aboutText: "HASHARCHI — современная мобильная платформа, созданная для удобного, безопасного и быстрого поиска мастеров, разнорабочих, сантехников, электриков, грузчиков и заказов на дневную работу. Наша цель – сделать рынок труда прозрачным и доступным для всех по всему Узбекистану.",
     contactTitle: "Связаться с нами",
 
     socialTelegram: "Telegram канал",
@@ -250,7 +250,7 @@ export const translations = {
     ctaQrHint: "iOS ва Android учун мавжуд",
 
     aboutTitle: "Биз ҳақимизда",
-    aboutText: "HASHARCHI — ишчилар ва буюртмаларни қулай, хавфсиз ва тез топиш учун яратилган замонавий мобил платформа. Мақсадимиз – кунлик иш бозорини шаффоф ва барча учун очиқ қилишдир.",
+    aboutText: "HASHARCHI — уста, ишчи, мардикор, сантехник, электрик ва юкчи каби мутахассисларни ҳамда кунлик ишларни қулай, хавфсиз ва тез топиш учун яратилган замонавий мобил платформа. Мақсадимиз – Ўзбекистон бўйлаб кунлик иш бозорини шаффоф ва барча учун очиқ қилишдир.",
     contactTitle: "Биз билан боғланиш",
 
     socialTelegram: "Telegram канал",
