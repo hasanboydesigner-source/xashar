@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Flame, Zap, Droplet, Truck, Sparkles, Wrench } from 'lucide-react';
+import heroImg from '../ChatGPT Image Jul 25, 2026, 11_16_46 AM-Photoroom.png';
 
 // Left chips: slide-in from left, then continuous individual float loop
 const leftChips = [
@@ -114,7 +115,7 @@ export default function Hero({ t, onOpenDownload }) {
           {/* Phone image */}
           <div className="hero-phones-frame">
             <img
-              src="assets/ChatGPT Image Jul 25, 2026, 11_16_46 AM-Photoroom.png"
+              src={heroImg}
               alt="HASHARCHI Mobil Ilova"
               className="hero-phones-img phones-levitate"
             />
