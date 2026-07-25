@@ -770,17 +770,20 @@ button {
   flex-wrap: wrap;
 }
 
-.cta-store-badge img {
-  height: 44px;
-  width: auto;
-  border-radius: 9px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.3);
-  transition: transform .22s ease, box-shadow .22s ease;
+.cta-store-badge {
+  display: inline-block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  will-change: transform;
 }
-
-.cta-store-badge:hover img {
+.cta-store-badge:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+  filter: brightness(1.1);
+}
+.cta-store-badge img {
+  display: block;
+  height: 44px;
+  /* Senior level: clip out the cheap grey border built into the Wikipedia SVG */
+  clip-path: inset(1px round 7px);
 }
 
 /* ── RIGHT — QR card ── */
@@ -1564,15 +1567,20 @@ button {
   gap: 14px;
 }
 
-.modal-store-badge-link img {
-  height: 38px;
-  width: auto;
-  border-radius: 8px;
-  transition: transform .2s ease;
+.modal-store-badge-link {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
-
-.modal-store-badge-link:hover img {
-  transform: translateY(-2px);
+.modal-store-badge-link:hover {
+  transform: translateY(-2px) scale(1.02);
+  filter: brightness(1.1);
+}
+.modal-store-badge-link img {
+  height: 40px;
+  border-radius: 6px;
+  /* Senior level: crop the hardcoded grey stroke */
+  clip-path: inset(1px round 6px);
 }
 
 .modal-scroll-body {
