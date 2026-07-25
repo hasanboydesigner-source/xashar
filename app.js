@@ -1,7 +1,4 @@
-/**
- * HASHARCHI Web Application Logic
- * Multilingual Engine (UZ, RU, ЎЗ), Tabs, Modals & Interactivity
- */
+
 
 const translations = {
   UZ: {
@@ -265,7 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();
 });
 
-// Language Switcher Logic
 function initLanguage() {
   setLanguage(currentLang);
 
@@ -283,7 +279,7 @@ function initLanguage() {
 }
 
 function setLanguage(lang) {
-  // Active class on language buttons
+ 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     if (btn.getAttribute('data-lang') === lang) {
       btn.classList.add('active');
@@ -292,7 +288,6 @@ function setLanguage(lang) {
     }
   });
 
-  // Translate all data-i18n elements
   const dict = translations[lang];
   document.querySelectorAll('[data-i18n]').forEach(elem => {
     const key = elem.getAttribute('data-i18n');
@@ -302,7 +297,6 @@ function setLanguage(lang) {
   });
 }
 
-// Tab Switcher Logic
 function initTabs() {
   const tabBtns = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
@@ -323,9 +317,8 @@ function initTabs() {
   });
 }
 
-// Modal Controllers
 function initModals() {
-  // Download / QR Modal
+ 
   const downloadModal = document.getElementById('download-modal');
   const downloadOpenBtns = document.querySelectorAll('.open-download-modal');
   const downloadCloseBtn = document.getElementById('close-download-modal');
@@ -341,7 +334,6 @@ function initModals() {
     downloadCloseBtn.addEventListener('click', () => downloadModal.classList.remove('active'));
   }
 
-  // Privacy Modal
   const privacyModal = document.getElementById('privacy-modal');
   const privacyOpenBtn = document.getElementById('open-privacy');
   const privacyCloseBtn = document.getElementById('close-privacy-modal');
@@ -353,7 +345,6 @@ function initModals() {
     privacyCloseBtn.addEventListener('click', () => privacyModal.classList.remove('active'));
   }
 
-  // Terms Modal
   const termsModal = document.getElementById('terms-modal');
   const termsOpenBtn = document.getElementById('open-terms');
   const termsCloseBtn = document.getElementById('close-terms-modal');
@@ -365,7 +356,6 @@ function initModals() {
     termsCloseBtn.addEventListener('click', () => termsModal.classList.remove('active'));
   }
 
-  // Close modals on clicking backdrop
   document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
     backdrop.addEventListener('click', (e) => {
       if (e.target === backdrop) {
@@ -374,7 +364,6 @@ function initModals() {
     });
   });
 
-  // ESC key to close active modal
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       document.querySelectorAll('.modal-backdrop.active').forEach(modal => modal.classList.remove('active'));
