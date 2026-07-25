@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Users, Flame, Zap, Droplet, Truck, Sparkles, Wrench } from 'lucide-react';
-import heroImg from '../ChatGPT Image Jul 25, 2026, 11_16_46 AM-Photoroom.png';
+import heroImg from '../mainimg.png';
 import qrCodeImg from '../qrcode.gif';
 
 export default function Hero({ t, onOpenDownload }) {
